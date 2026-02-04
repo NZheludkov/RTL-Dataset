@@ -1,0 +1,13 @@
+set top_level "sasc_top"
+set clock "clk"
+
+set CLK_PERIOD "5.0"
+set IO_DELAY "0.5"
+set CU "40"
+set AR "1.0"
+set PDN_HWIDTH "3"
+set PDN_HSPACING "1.6"
+set PDN_HPITCH "18"
+set PDN_VWIDTH "2"
+set PDN_VSPACING "1"
+set PDN_VPITCH "18"
