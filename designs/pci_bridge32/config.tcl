@@ -1,9 +1,9 @@
 set top_level "pci_bridge32"
 set clock "wb_clk_i"
 
-set CLK_PERIOD "9.0"
-set IO_DELAY "0.5"
-set CU "20"
+set CLK_PERIOD "20.0"
+set IO_DELAY "0.1"
+set CU "10"
 set AR "1.0"
 set PDN_HWIDTH "3"
 set PDN_HSPACING "1.6"

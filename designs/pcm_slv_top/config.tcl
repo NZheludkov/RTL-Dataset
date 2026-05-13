@@ -1,9 +1,9 @@
 set top_level "pcm_slv_top"
 set clock "clk"
 
-set CLK_PERIOD "12.0"
-set IO_DELAY "0.5"
-set CU "20"
+set CLK_PERIOD "5.0"
+set IO_DELAY "0.2"
+set CU "30"
 set AR "1.0"
 set PDN_HWIDTH "3"
 set PDN_HSPACING "1.6"
