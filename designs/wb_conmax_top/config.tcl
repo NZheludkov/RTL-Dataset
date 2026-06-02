@@ -1,13 +1,2 @@
 set top_level "wb_conmax_top"
 set clock "clk_i"
-
-set CLK_PERIOD "25.0"
-set IO_DELAY "0.33"
-set CU "2"
-set AR "1.5"
-set PDN_HWIDTH "3"
-set PDN_HSPACING "1.6"
-set PDN_HPITCH "18"
-set PDN_VWIDTH "2"
-set PDN_VSPACING "1"
-set PDN_VPITCH "18"

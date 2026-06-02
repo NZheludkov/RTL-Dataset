@@ -1,13 +1,2 @@
 set top_level "sdram"
 set clock "clk_i"
-
-set CLK_PERIOD "10.0"
-set IO_DELAY "0.33"
-set CU "30"
-set AR "1.0"
-set PDN_HWIDTH "1.6"
-set PDN_HSPACING "3.2"
-set PDN_HPITCH "16"
-set PDN_VWIDTH "1.6"
-set PDN_VSPACING "3.2"
-set PDN_VPITCH "16"
