@@ -1,9 +1,3 @@
-/////////////////////////////////////////////////////////////////////
-//   This file is part of the GOST 28147-89 CryptoCore project     //
-//                                                                 //
-//   Copyright (c) 2016 Dmitry Murzinov (kakstattakim@gmail.com)   //
-/////////////////////////////////////////////////////////////////////
-
 module sbox_ram (
     input   wire       CLK, // Clock
     input   wire       CEN, // ChipEnable
@@ -14,7 +8,6 @@ module sbox_ram (
     input   wire [31:0] SI, // Data Input
     output  reg  [31:0] SO  // Data output
 );
-///////////////////////////////////////////////////
 
 wire [3:0] AMUX [7:0]; // for address multiplexer
 
@@ -27,12 +20,11 @@ generate
         .CEN(CEN          ),
         .WEN(WEN          ),
         .A(  AMUX[i]      ),
-        .D(  SI[i*4+3:i*4]),
-        .Q(  SO[i*4+3:i*4])
+      .D( SI[4*i +: 4] ),   // для i=0: [3:0], i=1: [7:4] и т.д.
+      .Q( SO[4*i +: 4] )
         );
     assign AMUX[i] = INIT ? CA : SA[i*4+3:i*4];
   end
 endgenerate
 
 endmodule
-//EOF
