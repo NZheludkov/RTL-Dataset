@@ -28,6 +28,6 @@ set_load -pin_load -min  $OUT_PORT_LOAD [all_outputs]
 set_input_transition -max $INPUT_TRANSITION [all_inputs]
 set_input_transition -min $INPUT_TRANSITION [all_inputs]
  
-set_false_path -from [all_inputs -no_clocks]
-set_false_path -to [all_outputs]
+#set_false_path -from [all_inputs -no_clocks]
+#set_false_path -to [all_outputs]
  
